@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Given</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <link rel="icon" type="image/xicon" href="imagenes/mafuyuicon.jpg">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="menu">
+                <div class="btn"><a href="index.html">Inicio</a></div>
+                <div class="btn"><a href="historia.html">Historia</a></div>
+                <div class="btn"><a href="galeria.html">Galería</a></div>
+                <div class="btn"><a href="contacto.html">Contacto</a></div>
+            </div>
+            <div class="caja01">
+                <div class="texti">
+                    <h2>Bienvenido</h2>
+                    <p>Nos gustaría conocerte más. Por favor, llena la siguiente encuesta</p>
+                    <p>¡No tardarás mucho!</p>
+                    <p>Gracias</p>
+                </div>
+                <div class="imagen"><br><br><br>
+                    <h2>Encuesta</h2>
+                    <p>Por favor complete los siguientes campos</p>
+                    <form>
+                        <fieldset>
+                            <label for="nombre">Por favor escriba su nombre: <input id="nombre" name="nombre" type="text" required> </label><br>
+                            <label for="apellido">Por favor escriba su apellido: <input id="apellido" name="apellido" type="text" required> </label><br>
+                            <label for="email">Por favor escriba su email: <input id="email" name="email" type="text" required> </label><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿Qué deseas sugerir?</legend>
+                            <label for="sugerencia"><input id="suge" type="radio" name="tipodepqr" class="inline" checked>Sugerencia</label>
+                            <label for="queja"><input id="queja" type="radio" name="tipodepqr" class="inline">Queja</label>
+                            <label for="felicitacion"><input id="felicitacion" type="radio" name="tipodepqr" class="inline">Felicitación</label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿cómo desea ser contactado?</legend>
+                            <label for="refe">La forma para contactarlo será: 
+                                <select id="refe" name="refe" required>
+                                    <option value="">Seleccione una forma de contacto</option>
+                                    <option value="1">Email</option>
+                                    <option value="2">Whatsapp</option>
+                                    <option value="3">Facebook</option>
+                                    <option value="3">Instagram</option>
+                                    <option value="3">Ninguna de las anteriores</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <label for="comentario">Escriba un comentario:
+                            <textarea id="comentario" name="comentario" rows="4" cols="30" placeholder="Aquí está mi comentario"></textarea>
+                        </label>
+                        <input type="submit" formaction="gracias.html" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div class="texto">
+                <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13627579.110253144!2d137.15386460000002!3d33.5001886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww7Nu!5e0!3m2!1ses-419!2sco!4v1712958875437!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+            <div class="pie">
+                <p>Página creada por David Bolívar - Medellín, 2024</p>
+                <div class="redes"><a href="https://www.facebook.com" target="_blank"><img src="imagenes/redfacebook.png" alt="/"></a></div>
+                <div class="redes"><a href="https://www.instagram.com" target="_blank"><img src="imagenes/redinstagram.png" alt="/"></a></div>
+                <div class="redes"><a href="https://www.youtube.com" target="_blank"><img src="imagenes/redyoutube.png" alt="/"></a></div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script>Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+          });
+        </script> 
+    </body>
+</html>
